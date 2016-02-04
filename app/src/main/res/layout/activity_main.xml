@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.brettnapier.rockpaperscissors.MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scores"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/rockButton"
+        android:layout_toStartOf="@+id/rockButton"
+        android:layout_marginTop="87dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rock"
+        android:id="@+id/rockButton"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/paperButton"
+        android:layout_alignStart="@+id/paperButton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Paper"
+        android:id="@+id/paperButton"
+        android:layout_below="@+id/rockButton"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scissors"
+        android:id="@+id/scissorButton"
+        android:layout_below="@+id/paperButton"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="To play: Pick Rock, Paper, or Scissors!"
+        android:id="@+id/instructionsView"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Created by: Brett Napier"
+        android:id="@+id/authorView"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/scissorButton"
+        android:layout_toStartOf="@+id/scissorButton" />
+
+</RelativeLayout>
